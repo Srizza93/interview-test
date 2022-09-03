@@ -4,7 +4,7 @@ const HtmlWepbackPluglin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     main: {
       import: path.resolve(__dirname, "./src/main.js"),
@@ -15,7 +15,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  devtool: "inline-source-map",
+  // devtool: "inline-source-map",
   performance: {
     hints: false,
     maxEntrypointSize: 512000,
