@@ -1,0 +1,16 @@
+<h1>Excuses de Dev</h1>
+
+<p>"Excuses de Dev" App is a sentence generator to urge the users to wait and be patient.
+It's a Vue component which shows title, sentence and button.
+This component has a sub-component which is the button itself, which will generate the sentence and send it
+to the parent component.
+The components are mounted into a webpack environment, using the router for the different routes.
+</p>
+
+<h3>The routes are:</h3>
+<ul>
+  <li>"/" => Main page, component: "Excuses de Dev"</li>
+  <li>"/lost" => This page is showing "I'm lost", with a gif below. Redirection to the main page after 5 seconds</li>
+  <li>"/:pathMatch(.*)*" => 404 Page not found</li>
+  <li>"/http/:http_code" => Page showing the message clicked on main page via router-link, http_code is shared via parameters</li>
+</ul>
