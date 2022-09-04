@@ -74,11 +74,11 @@ The costraints are 1 < sentences.length < infinite
 - The new sentence object is communicated to the parent component and the loader disappears to leave space to the sentence
 - The button clicked during the loading time doesn't trigger any event
 
-### Notation
+### Notations
 
 - As per specifics we are keeping track of the previous index so to not show the same phrase again. If the required behavior instead was to show a phrase only once in general, I would have:
-1) removed the phrase from the list through `delete`
-2) managed the case in which there are no more elements in the list, either with a standard phrase or reinitializing the list with the original content
+1) Removed the phrase from the list through `delete`
+2) Managed the case in which there are no more elements in the list, either with a standard phrase or reinitializing the list with the original content
 
 - Sentences are represented as router links which redirect to /http/:http_code@:is_sent.
 This feature is added as given the absence of backend, there was the need of creating a route to the above path, so that the http_code 
