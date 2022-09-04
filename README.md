@@ -28,7 +28,7 @@ The components are mounted into a webpack environment, using the router for the 
 </ul>
 
 ### Usage
-The demo is in the <a to="https://github.com/Srizza93/interview-test/tree/main/src">src</a> directory and
+The demo is in the [src](https://github.com/Srizza93/interview-test/tree/main/src) directory and
 the installation is done via main.js.
 The different routes can be found in <a to="https://github.com/Srizza93/interview-test/blob/main/src/router/index.js">/router/index.js</a>.
 The app page is at <a to="https://github.com/Srizza93/interview-test/blob/main/src/pages/ExcusesDeDev.vue">ExcusesDeDev.vue</a> 
