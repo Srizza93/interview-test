@@ -40,6 +40,11 @@ For production:
 npm run build
 ```
 
+To deploy in github pages via gh-pages package:
+```
+npm run deploy
+```
+
 ### Principle
 
 The whole concept is based on the below code
