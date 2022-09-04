@@ -77,7 +77,7 @@ The costraints are 1 < sentences.length < infinite
 ### Notations
 
 - As per specifics we are keeping track of the previous index so to not show the same phrase again. If the required behavior instead was to show a phrase only once in general, I would have:
-1) Removed the phrase from the list through `delete`
+1) Removed the phrase from the list through `this.sentences.splice(this.actIndex, 1)`
 2) Managed the case in which there are no more elements in the list, either with a standard phrase or reinitializing the list with the original content
 
 - Sentences are represented as router links which redirect to /http/:http_code@:is_sent.
