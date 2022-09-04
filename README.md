@@ -16,7 +16,7 @@ The components are mounted into a webpack environment, using the router for the 
 </ul>
 
 ### Demo
-<a to="https://srizza93.github.io/interview-test/">https://srizza93.github.io/interview-test/</a>
+[/interview-test/](https://srizza93.github.io/interview-test/)
 
 ### Stack:
 <ul>
@@ -30,9 +30,9 @@ The components are mounted into a webpack environment, using the router for the 
 ### Usage
 The demo is in the [src](https://github.com/Srizza93/interview-test/tree/main/src) directory and
 the installation is done via main.js.
-The different routes can be found in <a to="https://github.com/Srizza93/interview-test/blob/main/src/router/index.js">/router/index.js</a>.
-The app page is at <a to="https://github.com/Srizza93/interview-test/blob/main/src/pages/ExcusesDeDev.vue">ExcusesDeDev.vue</a> 
-and routing is handled via single-file component <a to="https://github.com/Srizza93/interview-test/blob/main/src/App.vue">App.vue</a>.
+The different routes can be found in [/router/index.js](https://github.com/Srizza93/interview-test/blob/main/src/router/index.js).
+The app page is at [ExcusesDeDev.vue](https://github.com/Srizza93/interview-test/blob/main/src/pages/ExcusesDeDev.vue) 
+and routing is handled via single-file component [App.vue](https://github.com/Srizza93/interview-test/blob/main/src/App.vue).
 
 To run the demo:
 
