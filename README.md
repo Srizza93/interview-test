@@ -68,7 +68,7 @@ The whole concept is based on the below code
 - When the button "sent-generator" is clicked a loader gets toggled on
 - A timer gets randomly generated for the desired time to wait for the next sentence, in this case up to 5 seconds
 - Meanwhile, a random index is generated, based on the length of the array sentences saved in 
-the "sent-generator" data component
+the "sent-generator" data component.
 The random index gets generated unlimited times until this is different from the previous one
 The costraints are 1 < sentences.length < infinite
 - The new sentence object is communicated to the parent component and the loader disappears to leave space to the sentence
@@ -91,6 +91,6 @@ createApp(App).use(router).mount(".root");
 - Minimalist design developed via single-file components with scoped style and pure CSS
 - Loading illusion animation, after click, a loader is shown for between 1 and 5 seconds
 - On landing page load, the title appears in the center of the app with a fade-in effect.
-After 2 seconds, the title move to the top and a button appears in the center.
+After 2 seconds, the title moves to the top and a button appears in the center.
 After the first click, the button leaves the space for the text, and moves to the bottom
 
