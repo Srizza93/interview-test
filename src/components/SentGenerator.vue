@@ -320,7 +320,7 @@ export default {
 
       const self = this;
       this.timerOn = true;
-      const timeToEmit = this.generateRandom(5000);
+      const timeToEmit = this.generateRandom(1000, 5000);
 
       this.setRandomIndex();
       this.$emit("toggleLoader");
@@ -329,14 +329,14 @@ export default {
       }, timeToEmit);
     },
     setRandomIndex() {
-      let newIndex = this.generateRandom(this.sentences.length);
+      let newIndex = this.generateRandom(0, this.sentences.length);
       while (this.actIndex === newIndex) {
-        newIndex = this.generateRandom(this.sentences.length);
+        newIndex = this.generateRandom(0, this.sentences.length);
       }
       this.actIndex = newIndex;
     },
-    generateRandom(ms) {
-      return Math.floor(Math.random() * ms);
+    generateRandom(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
     },
     emitChangesAndClearTimeout() {
       this.$emit("toggleLoader");
