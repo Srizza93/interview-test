@@ -21,7 +21,7 @@ body {
 * {
   box-sizing: border-box;
 }
-.root {
+.app-root {
   display: flex;
   min-width: 100vw;
   min-height: 100vh;

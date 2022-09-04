@@ -3,8 +3,8 @@ const { VueLoaderPlugin } = require("vue-loader");
 const HtmlWepbackPluglin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
-module.exports = {
-  mode: "production",
+let config = {
+  mode: "development",
   entry: {
     main: {
       import: path.resolve(__dirname, "./src/main.js"),
@@ -15,7 +15,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  // devtool: "inline-source-map",
   performance: {
     hints: false,
     maxEntrypointSize: 512000,
@@ -53,4 +52,16 @@ module.exports = {
       __VUE_PROD_DEVTOOLS__: true,
     }),
   ],
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode === "development") {
+    config.devtool = "inline-source-map";
+  }
+
+  if (argv.mode === "production") {
+    config.output.publicPath = "/interview-test/";
+  }
+
+  return config;
 };

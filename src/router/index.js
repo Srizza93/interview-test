@@ -29,7 +29,7 @@ const routes = routeOptions.map((route) => {
 
 const router = createRouter({
   history: createWebHashHistory("/interview-test/"),
-  base: "/interview-test/",
+  base: "/",
   routes,
 });
 
